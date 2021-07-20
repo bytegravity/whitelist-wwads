@@ -1,9 +1,19 @@
-#### [万维广告](https://wwads.cn) 网站流量主专用
+#### 万维广告网站流量主专用
 
 ![image](https://user-images.githubusercontent.com/4530539/126099207-04e4add7-4a71-4721-8f3f-750b33bfcc36.png)
 
-以下 Javascript 代码（可放置在广告加载页面底部的 script 标签中）会检测万维广告的广告请求（函数名为“_AdBlockInit”）是否被 AdBlockPlus 等广告拦截器拦截，如果被拦截，则向访客展示页面顶部的提示加入广告拦截器白名单的通知条（如上图），查看 [示例站点](https://zhaodao.ai)（需要先开启广告拦截器查看效果）。你也可以根据需要自行修改代码。
+该 Javascript 代码会检测万维广告的广告代码（makemoney.js）是否被 AdBlockPlus 等广告拦截器拦截，如果被拦截（即 _AdBlockInit 为未定义状态），则向访客展示页面顶部的提示加入广告拦截器白名单的通知条（如上图），查看 [示例站点效果](https://zhaodao.ai)（需要先开启广告拦截器查看效果）。
 
+#### 前置条件
+请首先确保您已加入了 [万维广告](https://wwads.cn) 流量主，并在页面顶部引入了我们的新版 Javascript 广告代码（已通过 CDN 加速），即：
+
+```
+<script type="text/javascript" src="https://cdn.wwads.cn/js/makemoney.js" async></script>
+```
+
+#### 使用方法
+
+请将以下 Javascript 代码放置在广告加载页面底部的 script 标签中，你也可以根据需要自行修改代码。
 
 ```
 // function called if wwads is blocked
