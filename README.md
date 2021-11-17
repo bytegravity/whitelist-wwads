@@ -1,6 +1,6 @@
 #### 万维广告网站流量主专用
 
-![image](https://user-images.githubusercontent.com/4530539/141449299-74e1691c-c4a4-4a05-b698-4ff6186123d7.png)
+![image](https://user-images.githubusercontent.com/4530539/142176973-0a5a9d88-b90c-4fe3-a2e2-4879d2c55dca.png)
 
 该 Javascript 代码会检测万维广告的广告代码（makemoney.js）是否被 AdBlockPlus 等广告拦截器拦截，如果广告被拦截（即 _AdBlockInit 为未定义状态），则广告会用提示用户加入拦截器白名单的广告替代（如上图），查看 [示例站点效果](https://zhaodao.ai)（需要先开启广告拦截器查看效果）。
 
@@ -39,4 +39,12 @@ docReady(function () {
 });
 
 ```
+
+#### 可选配图
+
+除了上面万维广告官方提供的默认图片外，您还可以使用其他图片作为提示配图，请自行修改以上代码 insertAdjacentHTML 内 img 图片的 src 地址，例如：
+
+![placeholder](https://user-images.githubusercontent.com/4530539/142177191-af7c72d8-514a-4a88-8d5a-e31bd056c485.png)
+
+
 
