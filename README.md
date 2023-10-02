@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/4530539/142176973-0a5a9d88-b90c-4fe3-a2e2-4879d2c55dca.png)
 
-该 Javascript 代码会检测万维广告的广告代码（makemoney.js）是否被 AdBlockPlus 等广告拦截器拦截，如果广告被拦截（即 _AdBlockInit 为未定义状态），则广告会用提示用户加入拦截器白名单的广告替代（如上图），查看 [示例站点效果](https://zhaodao.ai)（需要先开启广告拦截器查看效果）。
+该 Javascript 代码会检测万维广告的广告代码（makemoney.js）是否被 AdBlockPlus 等广告拦截器拦截，如果广告被拦截（即 _AdBlockInit 为未定义状态），则广告文案和配图会用提示用户加入拦截器白名单的广告替代（如上图）。
 
 #### 前置条件
 请首先确保您已加入了 [万维广告](https://wwads.cn) 流量主，并在页面顶部引入了我们的最新版 Javascript 广告代码，并需要手动删除 script 中的异步加载属性 `async`，最终代码如下：
@@ -11,7 +11,7 @@
 <script type="text/javascript" src="https://cdn.wwads.cn/js/makemoney.js"></script>
 ```
 
-#### 使用方法
+#### 安装方法
 
 完成以上步骤后，请将以下 Javascript 代码放置在广告加载页面底部的 script 标签中，你也可以根据需要自行修改代码。
 
